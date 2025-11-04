@@ -21,7 +21,7 @@ win.grid_columnconfigure(index=0,weight=1)
 Bnewfile=Button(win,text="New File",command=newfile,bg="green",fg="white")
 Bopenfile=Button(win,text="Open File",command=newfile,bg="grey",fg="white")
 BExit=Button(win,text="Exit",command=win.destroy,bg="orange",fg="white")
-Bencrypt=Button(win,text="Encrypt",command=win.destroy,bg="red",fg="white")
+Bencrypt=Button(win,text="Encrypt",command=win.destroy,bg="brown",fg="white")
 Bdcrypt=Button(win,text="Decrypt",command=win.destroy,bg="red",fg="white")
 
 
