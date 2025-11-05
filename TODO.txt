@@ -1,5 +1,5 @@
 TODO
-1. window using classes --- likith
+1. window using classes --- likith#
 2. encrypter and dycrypter which works on the editor and using a diff window also --likith
 3. changing and importing new font -- arnav
 4. chainging font size---arnav
