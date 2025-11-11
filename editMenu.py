@@ -2,8 +2,6 @@ def undo():
     print("Undo")
 def redo():
     print("Redo")
-def clear():
-    print("Clear")
 def copy():
     print("Copy")
 def cut():

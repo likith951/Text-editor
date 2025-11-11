@@ -4,12 +4,12 @@ TODO
 3. changing and importing new font -- arnav
 4. chainging font size---arnav
 5. allignment---arnav
-6. word and char count---likith
-7. line and col count---likith
+6. word and char count---likith#
+7. line and col count---likith#
 8. find and replace words---dhanush
 9. importing and chaning themes add default dark and light theme---dhanush
 10. add check boxes , make a TODO list as a default --- arnav
-11. save files and opening files--likith
+11. save files and opening files--likith#
 12. closing ({<[---dhanush
 13 adding scroll bar---likith
 14. adding B I and underlined text--arnav
@@ -25,4 +25,4 @@ MORE FEATURES
 22.spell check using (pyspellchecker)---likith
 23.add templates ---likith
 24.highlet some default words like TODO , today ,.. -- dhanush
-25.undo redo--- dhanush
+25.undo redo,cut--- dhanush
