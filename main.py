@@ -5,6 +5,7 @@ from tkinter import *
 from tkinter import filedialog
 from  editMenu import *
 from viewMenu import *
+from expenTemplate import *
 global w , file , text
 def newfile(event=None):
     filename = filedialog.asksaveasfilename()
@@ -126,6 +127,7 @@ win.grid_rowconfigure(index=3,weight=1)
 win.grid_rowconfigure(index=0,weight=1)
 win.grid_rowconfigure(index=1,weight=1)
 win.grid_rowconfigure(index=4,weight=1)
+win.grid_rowconfigure(index=5,weight=1)
 win.grid_columnconfigure(index=0,weight=1)
 
 
@@ -134,13 +136,14 @@ Bopenfile=Button(win,text="Open File",command=openfile,bg="grey",fg="white")
 BExit=Button(win,text="Exit",command=win.destroy,bg="orange",fg="white")
 Bencrypt=Button(win,text="Encrypt",command=encryptfile,bg="brown",fg="white")
 Bdcrypt=Button(win,text="Decrypt",command=decryptfile,bg="red",fg="white")
-
+Bexpen=Button(win,text="EXPEN",command=expenTemplate,bg="blue",fg="white")
 
 Bnewfile.grid(row=0,column=0, padx=10,pady=2,sticky=NSEW)
 Bopenfile.grid(row=1,column=0, padx=10,pady=2,sticky=NSEW)
 Bencrypt.grid(row=2,column=0, padx=10,pady=2,sticky=NSEW)
 Bdcrypt.grid(row=3,column=0, padx=10,pady=2,sticky=NSEW)
-BExit.grid(row=4,column=0, padx=10,pady=2,sticky=NSEW)
+Bexpen.grid(row=4,column=0, padx=10,pady=2,sticky=NSEW)
+BExit.grid(row=5,column=0, padx=10,pady=2,sticky=NSEW)
 
 
 
