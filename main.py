@@ -9,6 +9,8 @@ from expenTemplate import *
 global w , file , text
 def newfile(event=None):
     filename = filedialog.asksaveasfilename()
+    if len(filename.split('.')) !=2:
+        filename = filename+'.txt'
     file = open(filename, "w")
     window(filename,file)
 
@@ -21,7 +23,7 @@ def openfile(event=None):
 
 def window(filename,file,content=""):
     w = Tk()
-    w.title(filename)
+    w.title(filename.split('/')[-1])
     w.resizable(True, True)
     w.geometry("300x300")
     w.configure(background="white")
@@ -33,6 +35,8 @@ def window(filename,file,content=""):
 
     Llable = Label(w, text="Line:0|Col:0")
     Llable.place(relx=1.0, rely=1.0, anchor='se')
+    Elable=Label(w,text="ext:{}".format(filename.split('.')[-1]))
+    Elable.place(relx=.7, rely=1.0, anchor='s')
     Wlable=Label(w, text="Word:0|Character:0")
     Wlable.place(relx=0.0, rely=1.0, anchor='sw')
     text.bind("<KeyRelease>", partial(wordCount,Wlable,text,Llable))
@@ -97,13 +101,13 @@ def clear(file,text,event=None):
     file.truncate(0)
     file.write(text.get(1.0, END))
     file.flush()
-def wordCount(Wlabel,text,Llable,event=None):
+def wordCount(Wlabel,text,Llable,filename,event=None):
     words=text.get(1.0, "end-1c").split()
     wordCount = len(words)
     charCount = 0
     n = text.index(INSERT)
     l = n.split(".")
-    Llable.config(text="Line:{}|Col:{}".format(l[0], l[1]))
+    Llable.config(text="ext:|Line:{}|Col:{}".format(l[0], l[1]))
     for word in words:
         for letter in word:
             charCount+=1

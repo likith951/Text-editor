@@ -13,16 +13,16 @@ TODO
 12. closing ({<[---dhanush
 13 adding scroll bar---likith
 14. adding B I and underlined text--arnav
-15.displaying the extention of the file---likith
-16. autosave for every change made---likith
-17.add and expenditure tracker and encrypt it by default---likith
+15.displaying the extention of the file---likith#
+16. autosave for every change made---likith#
+17.add and expenditure tracker and encrypt it by default---likith--
 18. if possible notes---likith
 ____________________________________________________________________
 MORE FEATURES
-19.add graph for expenditure tracker(matplotlib)---likith
+19.add graph for expenditure tracker(matplotlib)---likith--
 20.add progress bar for todo list---arnav
 21.add settings menu to toggle on or off the weird features like 12,---dhanush
 22.spell check using (pyspellchecker)---likith
-23.add templates ---likith
+23.add templates ---likith#
 24.highlet some default words like TODO , today ,.. -- dhanush
 25.undo redo,cut--- dhanush
